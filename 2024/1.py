@@ -1,4 +1,4 @@
-with open("input") as f:
+with open("input", "r") as f:
     ar = [i.split() for i in f.readlines()]
 
 a = []
