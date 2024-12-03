@@ -10,7 +10,7 @@ while len(s) >= 4:
         ne = s.find(")")
         if ne != -1:
             nums = s[4:ne].split(",")
-            if len(nums) == 2 and all((i.isnumeric() and 1 <= int(i) <= 1000) for i in nums):
+            if len(nums) == 2 and all((i.isnumeric() and 1 <= int(i) < 1000) for i in nums):
                 nums = list(map(int, nums))
                 ans1 += nums[0] * nums[1]
                 if good:
